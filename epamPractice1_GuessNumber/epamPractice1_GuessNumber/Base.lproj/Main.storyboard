@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Guess Number View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="GuessNumberViewController" customModule="epamPractice1_GuessNumber" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ground" translatesAutoresizingMaskIntoConstraints="NO" id="ekw-UL-oux">
+                                <rect key="frame" x="20" y="44" width="374" height="818"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Угадай число" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BTc-Yr-t4B">
+                                <rect key="frame" x="20" y="153" width="374" height="45.5"/>
+                                <color key="tintColor" red="0.71864805190000003" green="0.80261972420000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="38"/>
+                                <color key="textColor" red="0.04629931182148149" green="0.19777210736940301" blue="0.59942100253807107" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите число" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2GP-wr-DVL">
+                                <rect key="frame" x="50" y="344" width="314" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="pRH-tt-fn1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A52-MG-zJe">
+                                <rect key="frame" x="180" y="496.5" width="54" height="33"/>
+                                <color key="backgroundColor" red="0.72709137199999996" green="0.82843464609999995" blue="0.83562344310000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="Сброс">
+                                    <color key="titleColor" red="0.077632777390000005" green="0.12811419369999999" blue="0.15095683930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonChancel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qtG-8r-yMy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MCo-pO-K6w">
+                                <rect key="frame" x="150" y="455.5" width="114" height="33"/>
+                                <color key="backgroundColor" red="0.72709137199999996" green="0.82843464609999995" blue="0.83562344310000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="Мне повезёт!">
+                                    <color key="titleColor" red="0.077632777390000005" green="0.12811419369999999" blue="0.15095683930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gSh-Tu-BOi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2GP-wr-DVL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="300" id="1IW-OV-PFY"/>
+                            <constraint firstItem="ekw-UL-oux" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="DFj-5i-ryx"/>
+                            <constraint firstItem="2GP-wr-DVL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="K1m-uT-gUM"/>
+                            <constraint firstItem="A52-MG-zJe" firstAttribute="centerX" secondItem="ekw-UL-oux" secondAttribute="centerX" id="US3-ML-0yn"/>
+                            <constraint firstItem="MCo-pO-K6w" firstAttribute="centerX" secondItem="ekw-UL-oux" secondAttribute="centerX" id="Uab-Bq-kTt"/>
+                            <constraint firstItem="BTc-Yr-t4B" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Zmk-qI-gnj"/>
+                            <constraint firstItem="A52-MG-zJe" firstAttribute="top" secondItem="MCo-pO-K6w" secondAttribute="bottom" constant="8" id="Zmo-jm-Tr5"/>
+                            <constraint firstItem="MCo-pO-K6w" firstAttribute="top" secondItem="2GP-wr-DVL" secondAttribute="bottom" constant="61.5" id="epo-Zj-4xt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ekw-UL-oux" secondAttribute="trailing" constant="20" id="gXe-rn-Jjj"/>
+                            <constraint firstItem="ekw-UL-oux" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="gbf-Uv-JmZ"/>
+                            <constraint firstItem="BTc-Yr-t4B" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="109" id="myb-gs-e3E"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BTc-Yr-t4B" secondAttribute="trailing" constant="20" id="pyz-ee-irA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2GP-wr-DVL" secondAttribute="trailing" constant="50" id="qBJ-Sq-nUM"/>
+                            <constraint firstItem="ekw-UL-oux" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="zEs-FI-hmM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="chancelButton" destination="A52-MG-zJe" id="PaJ-NW-kuj"/>
+                        <outlet property="guessButton" destination="MCo-pO-K6w" id="3jP-Ad-SVD"/>
+                        <outlet property="infoLabel" destination="BTc-Yr-t4B" id="fRx-6P-bmI"/>
+                        <outlet property="inputNumber" destination="2GP-wr-DVL" id="kLq-oj-iKO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="114.50892857142857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ground" width="800" height="1420"/>
+    </resources>
+</document>
