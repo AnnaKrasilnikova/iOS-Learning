@@ -57,7 +57,7 @@ class GuessNumberViewController: UIViewController {
     
     //MARK: generate new a number
     func generateNumber() -> Int {
-        return Int.random(in: 0...5)
+        return Int.random(in: 0...100)
     }
     
     //MARK: clear input textField
