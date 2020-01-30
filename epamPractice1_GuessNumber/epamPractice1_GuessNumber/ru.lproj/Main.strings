@@ -1,0 +1,69 @@
+
+/* Class = "UIButton"; normalTitle = "Reset"; ObjectID = "A52-MG-zJe"; */
+"A52-MG-zJe.normalTitle" = "Reset";
+
+/* Class = "UITextField"; placeholder = "0"; ObjectID = "Alh-Bd-Hue"; */
+"Alh-Bd-Hue.placeholder" = "0";
+
+/* Class = "UILabel"; text = "Guess the number"; ObjectID = "BTc-Yr-t4B"; */
+"BTc-Yr-t4B.text" = "Угадай число";
+
+/* Class = "UILabel"; text = "Input number from 0 to 100"; ObjectID = "CIi-fv-cIt"; */
+"CIi-fv-cIt.text" = "Введите число;
+
+/* Class = "UILabel"; text = "Set range from"; ObjectID = "EA9-W7-A35"; */
+"EA9-W7-A35.text" = "Укажите диапазон с";
+
+/* Class = "UIButton"; normalTitle = "Settings"; ObjectID = "EUD-Hy-G91"; */
+"EUD-Hy-G91.normalTitle" = "Настройки";
+
+/* Class = "UIButton"; normalTitle = "Guess"; ObjectID = "MCo-pO-K6w"; */
+"MCo-pO-K6w.normalTitle" = "Угадать";
+
+/* Class = "UIButton"; normalTitle = "Save"; ObjectID = "Mli-ab-rDr"; */
+"Mli-ab-rDr.normalTitle" = "Сохранить";
+
+/* Class = "UITextField"; placeholder = "100"; ObjectID = "OV4-9S-326"; */
+"OV4-9S-326.placeholder" = "100";
+
+/* Class = "UIButton"; normalTitle = "Info"; ObjectID = "TE0-ge-xyG"; */
+"TE0-ge-xyG.normalTitle" = "Инфо";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Uoe-eO-Owa"; */
+"Uoe-eO-Owa.text" = "Label";
+
+/* Class = "UILabel"; text = "The range is intered incorrectly! Try again."; ObjectID = "XkS-TS-kxK"; */
+"XkS-TS-kxK.text" = "Введите корректный диапазон.";
+
+/* Class = "UILabel"; text = "Number of games"; ObjectID = "Y8w-5H-fr0"; */
+"Y8w-5H-fr0.text" = "Число игр";
+
+/* Class = "UILabel"; text = "N"; ObjectID = "a0l-1J-D2S"; */
+"a0l-1J-D2S.text" = "N";
+
+/* Class = "UIButton"; normalTitle = "Back"; ObjectID = "bEN-JL-3e9"; */
+"bEN-JL-3e9.normalTitle" = "Назад";
+
+/* Class = "UILabel"; text = "Min number of tries"; ObjectID = "c5f-nH-c7a"; */
+"c5f-nH-c7a.text" = "Минимальное кол-во попыток";
+
+/* Class = "UILabel"; text = "Max number of tries"; ObjectID = "gSH-5r-U2U"; */
+"gSH-5r-U2U.text" = "Максимальная кол-во попыток";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "iV4-KF-cWl"; */
+"iV4-KF-cWl.text" = "0";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "ib9-3h-ywb"; */
+"ib9-3h-ywb.text" = "0";
+
+/* Class = "UILabel"; text = "Number of tries:"; ObjectID = "lpW-MA-ZtM"; */
+"lpW-MA-ZtM.text" = "Число попыток:";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "nkH-bd-hQW"; */
+"nkH-bd-hQW.text" = "0";
+
+/* Class = "UILabel"; text = "to"; ObjectID = "nom-Os-P3O"; */
+"nom-Os-P3O.text" = "по";
+
+/* Class = "UIButton"; normalTitle = "Back"; ObjectID = "ujR-Pl-73q"; */
+"ujR-Pl-73q.normalTitle" = "Назад";
