@@ -1,63 +1,57 @@
 
-/* Class = "UILabel"; text = "Counts of tries:"; ObjectID = "8IQ-6H-e5f"; */
-"8IQ-6H-e5f.text" = "Число попыток:";
-
 /* Class = "UIButton"; normalTitle = "Reset"; ObjectID = "A52-MG-zJe"; */
-"A52-MG-zJe.normalTitle" = "Сброс";
+"A52-MG-zJe.normalTitle" = "Reset";
 
 /* Class = "UITextField"; placeholder = "0"; ObjectID = "Alh-Bd-Hue"; */
 "Alh-Bd-Hue.placeholder" = "0";
 
 /* Class = "UILabel"; text = "Guess the number"; ObjectID = "BTc-Yr-t4B"; */
-"BTc-Yr-t4B.text" = "Угадай число";
+"BTc-Yr-t4B.text" = "Guess the number";
 
 /* Class = "UILabel"; text = "Input number"; ObjectID = "CIi-fv-cIt"; */
-"CIi-fv-cIt.text" = "Введи число";
+"CIi-fv-cIt.text" = "Input number";
 
-/* Class = "UILabel"; text = "from"; ObjectID = "EA9-W7-A35"; */
-"EA9-W7-A35.text" = "с";
+/* Class = "UILabel"; text = "Set range from"; ObjectID = "EA9-W7-A35"; */
+"EA9-W7-A35.text" = "Set range from";
 
 /* Class = "UIButton"; normalTitle = "Settings"; ObjectID = "EUD-Hy-G91"; */
-"EUD-Hy-G91.normalTitle" = "Настройки";
-
-/* Class = "UILabel"; text = "Set range"; ObjectID = "FtA-d5-Ga8"; */
-"FtA-d5-Ga8.text" = "Задать диапазон";
+"EUD-Hy-G91.normalTitle" = "Settings";
 
 /* Class = "UIButton"; normalTitle = "Guess"; ObjectID = "MCo-pO-K6w"; */
-"MCo-pO-K6w.normalTitle" = "Угадать";
+"MCo-pO-K6w.normalTitle" = "Guess";
 
 /* Class = "UIButton"; normalTitle = "Clear"; ObjectID = "Mcz-Ub-ohh"; */
-"Mcz-Ub-ohh.normalTitle" = "Очистить";
+"Mcz-Ub-ohh.normalTitle" = "Clear";
 
 /* Class = "UIButton"; normalTitle = "Save"; ObjectID = "Mli-ab-rDr"; */
-"Mli-ab-rDr.normalTitle" = "Сохранить";
+"Mli-ab-rDr.normalTitle" = "Save";
 
 /* Class = "UITextField"; placeholder = "100"; ObjectID = "OV4-9S-326"; */
 "OV4-9S-326.placeholder" = "100";
 
 /* Class = "UIButton"; normalTitle = "Info"; ObjectID = "TE0-ge-xyG"; */
-"TE0-ge-xyG.normalTitle" = "Информация";
+"TE0-ge-xyG.normalTitle" = "Info";
 
 /* Class = "UILabel"; text = "Label"; ObjectID = "Uoe-eO-Owa"; */
 "Uoe-eO-Owa.text" = "Label";
 
 /* Class = "UILabel"; text = "The range is intered incorrectly! Try again."; ObjectID = "XkS-TS-kxK"; */
-"XkS-TS-kxK.text" = "Диапазон задан некорректно";
+"XkS-TS-kxK.text" = "The range is intered incorrectly! Try again.";
 
 /* Class = "UILabel"; text = "Number of games"; ObjectID = "Y8w-5H-fr0"; */
-"Y8w-5H-fr0.text" = "Число игр";
+"Y8w-5H-fr0.text" = "Number of games";
 
 /* Class = "UILabel"; text = "N"; ObjectID = "a0l-1J-D2S"; */
 "a0l-1J-D2S.text" = "N";
 
 /* Class = "UIButton"; normalTitle = "Back"; ObjectID = "bEN-JL-3e9"; */
-"bEN-JL-3e9.normalTitle" = "Назад";
+"bEN-JL-3e9.normalTitle" = "Back";
 
-/* Class = "UILabel"; text = "Min"; ObjectID = "c5f-nH-c7a"; */
-"c5f-nH-c7a.text" = "Минимум";
+/* Class = "UILabel"; text = "Min number of tries"; ObjectID = "c5f-nH-c7a"; */
+"c5f-nH-c7a.text" = "Min number of tries";
 
-/* Class = "UILabel"; text = "Max"; ObjectID = "gSH-5r-U2U"; */
-"gSH-5r-U2U.text" = "Максимум";
+/* Class = "UILabel"; text = "Max number of tries"; ObjectID = "gSH-5r-U2U"; */
+"gSH-5r-U2U.text" = "Max number of tries";
 
 /* Class = "UILabel"; text = "0"; ObjectID = "iV4-KF-cWl"; */
 "iV4-KF-cWl.text" = "0";
@@ -66,13 +60,13 @@
 "ib9-3h-ywb.text" = "0";
 
 /* Class = "UILabel"; text = "Number of tries:"; ObjectID = "lpW-MA-ZtM"; */
-"lpW-MA-ZtM.text" = "Число попыток:";
+"lpW-MA-ZtM.text" = "Number of tries:";
 
 /* Class = "UILabel"; text = "0"; ObjectID = "nkH-bd-hQW"; */
 "nkH-bd-hQW.text" = "0";
 
 /* Class = "UILabel"; text = "to"; ObjectID = "nom-Os-P3O"; */
-"nom-Os-P3O.text" = "по";
+"nom-Os-P3O.text" = "to";
 
 /* Class = "UIButton"; normalTitle = "Back"; ObjectID = "ujR-Pl-73q"; */
-"ujR-Pl-73q.normalTitle" = "Назад";
+"ujR-Pl-73q.normalTitle" = "Back";

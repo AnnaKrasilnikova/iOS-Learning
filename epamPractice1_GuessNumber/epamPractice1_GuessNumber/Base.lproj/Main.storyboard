@@ -18,11 +18,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bEN-JL-3e9">
-                                <rect key="frame" x="278" y="62" width="100" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bEN-JL-3e9">
+                                <rect key="frame" x="227" y="62" width="150" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="Tgo-FC-TEZ"/>
-                                    <constraint firstAttribute="height" constant="40" id="lBt-fE-hsr"/>
+                                    <constraint firstAttribute="width" constant="150" id="4jR-cL-mEv"/>
+                                    <constraint firstAttribute="height" constant="40" id="S6I-sj-J4A"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="17"/>
                                 <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
@@ -33,46 +33,8 @@
                                     <action selector="backToMainButtonTapped:" destination="7Ne-Ee-HsM" eventType="touchUpInside" id="r0z-BM-g2b"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ib9-3h-ywb">
-                                <rect key="frame" x="314" y="150" width="64" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="64" id="4qV-nm-DXX"/>
-                                    <constraint firstAttribute="height" constant="30" id="CT3-fq-aM1"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="17"/>
-                                <color key="textColor" red="0.064163751899999996" green="0.20448517799999999" blue="0.60223704580000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Max number of tries" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gSH-5r-U2U">
-                                <rect key="frame" x="37" y="150" width="269" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="MNE-PF-fnc"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="17"/>
-                                <color key="textColor" red="0.064163751899999996" green="0.20448517799999999" blue="0.60223704580000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iV4-KF-cWl">
-                                <rect key="frame" x="314" y="206" width="64" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="k81-Gx-CMO"/>
-                                    <constraint firstAttribute="width" constant="64" id="vqw-gL-bRc"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="17"/>
-                                <color key="textColor" red="0.064163751899999996" green="0.20448517799999999" blue="0.60223704580000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Min number of tries" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c5f-nH-c7a">
-                                <rect key="frame" x="37" y="206" width="269" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="LUW-dW-VxK"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="17"/>
-                                <color key="textColor" red="0.064163751899999996" green="0.20448517799999999" blue="0.60223704580000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nkH-bd-hQW">
-                                <rect key="frame" x="314" y="258" width="64" height="30"/>
+                                <rect key="frame" x="313" y="155" width="64" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="64" id="azk-YO-Qlp"/>
                                     <constraint firstAttribute="height" constant="30" id="pQK-18-ESN"/>
@@ -82,9 +44,83 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of games" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y8w-5H-fr0">
-                                <rect key="frame" x="37" y="258" width="269" height="30"/>
+                                <rect key="frame" x="36" y="155" width="269" height="30"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="269" id="Pfj-fp-8NB"/>
                                     <constraint firstAttribute="height" constant="30" id="ecH-qK-jBs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="17"/>
+                                <color key="textColor" red="0.064163751899999996" green="0.20448517799999999" blue="0.60223704580000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mcz-Ub-ohh">
+                                <rect key="frame" x="37" y="62" width="150" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="DrT-sB-bda"/>
+                                    <constraint firstAttribute="width" constant="150" id="hAH-hh-dNy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="17"/>
+                                <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
+                                <state key="normal" title="Clear">
+                                    <color key="titleColor" red="0.064163751899999996" green="0.20448517799999999" blue="0.60223704580000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="clearInfoButtonTapped:" destination="7Ne-Ee-HsM" eventType="touchUpInside" id="ZJw-Qw-fKX"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Qts-s8-YVm">
+                                <rect key="frame" x="20" y="120" width="374" height="4"/>
+                                <color key="backgroundColor" red="0.064163751899999996" green="0.20448517799999999" blue="0.60223704580000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="fpV-74-VRl"/>
+                                    <constraint firstAttribute="height" constant="4" id="weO-BS-ZtR"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Counts of tries:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8IQ-6H-e5f">
+                                <rect key="frame" x="37" y="201" width="340" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="340" id="DY0-Oj-qYT"/>
+                                    <constraint firstAttribute="height" constant="37" id="wSr-P7-hxq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="21"/>
+                                <color key="textColor" red="0.064163751899999996" green="0.20448517799999999" blue="0.60223704580000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ib9-3h-ywb">
+                                <rect key="frame" x="262" y="255" width="64" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="4qV-nm-DXX"/>
+                                    <constraint firstAttribute="height" constant="30" id="CT3-fq-aM1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="17"/>
+                                <color key="textColor" red="0.064163751899999996" green="0.20448517799999999" blue="0.60223704580000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Max" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gSH-5r-U2U">
+                                <rect key="frame" x="74" y="255" width="180" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="MNE-PF-fnc"/>
+                                    <constraint firstAttribute="width" constant="180" id="znZ-Hj-hLe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="17"/>
+                                <color key="textColor" red="0.064163751899999996" green="0.20448517799999999" blue="0.60223704580000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iV4-KF-cWl">
+                                <rect key="frame" x="262" y="293" width="64" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="k81-Gx-CMO"/>
+                                    <constraint firstAttribute="width" constant="64" id="vqw-gL-bRc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="17"/>
+                                <color key="textColor" red="0.064163751899999996" green="0.20448517799999999" blue="0.60223704580000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Min" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c5f-nH-c7a">
+                                <rect key="frame" x="74" y="293" width="180" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="LUW-dW-VxK"/>
+                                    <constraint firstAttribute="width" constant="180" id="lis-dy-lc5"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="17"/>
                                 <color key="textColor" red="0.064163751899999996" green="0.20448517799999999" blue="0.60223704580000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -94,23 +130,30 @@
                         <color key="backgroundColor" red="0.92117339369999995" green="0.95754641289999998" blue="0.95176857709999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="0.064163751899999996" green="0.20448517799999999" blue="0.60223704580000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="nkH-bd-hQW" firstAttribute="top" secondItem="iV4-KF-cWl" secondAttribute="bottom" constant="22" id="9n6-EX-ZA2"/>
-                            <constraint firstItem="iV4-KF-cWl" firstAttribute="leading" secondItem="c5f-nH-c7a" secondAttribute="trailing" constant="8" id="BcU-8j-Y2j"/>
-                            <constraint firstItem="nkH-bd-hQW" firstAttribute="leading" secondItem="Y8w-5H-fr0" secondAttribute="trailing" constant="8" id="BiE-DS-8Hr"/>
-                            <constraint firstItem="Y8w-5H-fr0" firstAttribute="top" secondItem="c5f-nH-c7a" secondAttribute="bottom" constant="22" id="Fdb-GB-WyY"/>
-                            <constraint firstItem="WA1-I5-QsS" firstAttribute="trailing" secondItem="iV4-KF-cWl" secondAttribute="trailing" constant="36" id="HKB-5d-GoG"/>
-                            <constraint firstItem="c5f-nH-c7a" firstAttribute="leading" secondItem="WA1-I5-QsS" secondAttribute="leading" constant="37" id="Max-e8-MkU"/>
-                            <constraint firstItem="WA1-I5-QsS" firstAttribute="trailing" secondItem="nkH-bd-hQW" secondAttribute="trailing" constant="36" id="NZ9-D9-ANm"/>
-                            <constraint firstItem="WA1-I5-QsS" firstAttribute="trailing" secondItem="ib9-3h-ywb" secondAttribute="trailing" constant="36" id="RbB-ZQ-isw"/>
-                            <constraint firstItem="ib9-3h-ywb" firstAttribute="leading" secondItem="gSH-5r-U2U" secondAttribute="trailing" constant="8" id="VhT-82-o9e"/>
-                            <constraint firstItem="bEN-JL-3e9" firstAttribute="top" secondItem="WA1-I5-QsS" secondAttribute="top" constant="18" id="ciK-Zg-GuY"/>
-                            <constraint firstItem="Y8w-5H-fr0" firstAttribute="leading" secondItem="WA1-I5-QsS" secondAttribute="leading" constant="37" id="gW1-WM-KyQ"/>
-                            <constraint firstItem="ib9-3h-ywb" firstAttribute="top" secondItem="bEN-JL-3e9" secondAttribute="bottom" constant="48" id="jcy-sI-ozN"/>
-                            <constraint firstItem="c5f-nH-c7a" firstAttribute="top" secondItem="gSH-5r-U2U" secondAttribute="bottom" constant="26" id="m5D-cn-w8n"/>
-                            <constraint firstItem="iV4-KF-cWl" firstAttribute="top" secondItem="ib9-3h-ywb" secondAttribute="bottom" constant="26" id="opc-Iz-3xe"/>
-                            <constraint firstItem="gSH-5r-U2U" firstAttribute="leading" secondItem="WA1-I5-QsS" secondAttribute="leading" constant="37" id="puE-uf-fmL"/>
-                            <constraint firstItem="gSH-5r-U2U" firstAttribute="top" secondItem="bEN-JL-3e9" secondAttribute="bottom" constant="48" id="w9t-Ih-MVB"/>
-                            <constraint firstItem="WA1-I5-QsS" firstAttribute="trailing" secondItem="bEN-JL-3e9" secondAttribute="trailing" constant="36" id="y8S-CD-jeP"/>
+                            <constraint firstItem="8IQ-6H-e5f" firstAttribute="leading" secondItem="WA1-I5-QsS" secondAttribute="leading" constant="37" id="1Dj-ot-QL3"/>
+                            <constraint firstItem="gSH-5r-U2U" firstAttribute="top" secondItem="8IQ-6H-e5f" secondAttribute="bottom" constant="17" id="3Xr-Ky-mY6"/>
+                            <constraint firstItem="WA1-I5-QsS" firstAttribute="trailing" secondItem="ib9-3h-ywb" secondAttribute="trailing" constant="88" id="4C7-WJ-NQE"/>
+                            <constraint firstItem="Mcz-Ub-ohh" firstAttribute="top" secondItem="WA1-I5-QsS" secondAttribute="top" constant="18" id="6fy-KZ-T57"/>
+                            <constraint firstItem="iV4-KF-cWl" firstAttribute="top" secondItem="ib9-3h-ywb" secondAttribute="bottom" constant="8" id="9kv-Y3-BRr"/>
+                            <constraint firstItem="nkH-bd-hQW" firstAttribute="top" secondItem="Qts-s8-YVm" secondAttribute="bottom" constant="31" id="BdH-S2-7TR"/>
+                            <constraint firstItem="WA1-I5-QsS" firstAttribute="trailing" secondItem="8IQ-6H-e5f" secondAttribute="trailing" constant="37" id="BgM-xV-LuC"/>
+                            <constraint firstItem="bEN-JL-3e9" firstAttribute="top" secondItem="WA1-I5-QsS" secondAttribute="top" constant="18" id="CZW-tK-Rko"/>
+                            <constraint firstItem="ib9-3h-ywb" firstAttribute="leading" secondItem="gSH-5r-U2U" secondAttribute="trailing" constant="8" id="EBj-ul-MDr"/>
+                            <constraint firstItem="nkH-bd-hQW" firstAttribute="leading" secondItem="Y8w-5H-fr0" secondAttribute="trailing" constant="8" id="FL0-o5-BNR"/>
+                            <constraint firstItem="iV4-KF-cWl" firstAttribute="leading" secondItem="c5f-nH-c7a" secondAttribute="trailing" constant="8" id="Ika-iy-xTc"/>
+                            <constraint firstItem="c5f-nH-c7a" firstAttribute="top" secondItem="gSH-5r-U2U" secondAttribute="bottom" constant="8" id="MjB-Rh-ix9"/>
+                            <constraint firstItem="ib9-3h-ywb" firstAttribute="top" secondItem="8IQ-6H-e5f" secondAttribute="bottom" constant="17" id="WNj-W3-nCz"/>
+                            <constraint firstItem="WA1-I5-QsS" firstAttribute="trailing" secondItem="bEN-JL-3e9" secondAttribute="trailing" constant="37" id="X2U-av-FBn"/>
+                            <constraint firstItem="Qts-s8-YVm" firstAttribute="top" secondItem="Mcz-Ub-ohh" secondAttribute="bottom" constant="18" id="XzI-85-EPo"/>
+                            <constraint firstItem="WA1-I5-QsS" firstAttribute="trailing" secondItem="iV4-KF-cWl" secondAttribute="trailing" constant="88" id="e9a-73-4e2"/>
+                            <constraint firstItem="Mcz-Ub-ohh" firstAttribute="leading" secondItem="WA1-I5-QsS" secondAttribute="leading" constant="37" id="gbc-0L-wdh"/>
+                            <constraint firstItem="ib9-3h-ywb" firstAttribute="leading" secondItem="gSH-5r-U2U" secondAttribute="trailing" constant="8" id="kgB-X4-img"/>
+                            <constraint firstItem="Y8w-5H-fr0" firstAttribute="leading" secondItem="WA1-I5-QsS" secondAttribute="leading" constant="36" id="mw1-f2-T9K"/>
+                            <constraint firstItem="Qts-s8-YVm" firstAttribute="leading" secondItem="WA1-I5-QsS" secondAttribute="leading" constant="20" id="puI-AX-oNz"/>
+                            <constraint firstItem="WA1-I5-QsS" firstAttribute="trailing" secondItem="Qts-s8-YVm" secondAttribute="trailing" constant="20" id="r12-iP-LPI"/>
+                            <constraint firstItem="WA1-I5-QsS" firstAttribute="trailing" secondItem="nkH-bd-hQW" secondAttribute="trailing" constant="37" id="xtk-Si-lcF"/>
+                            <constraint firstItem="Y8w-5H-fr0" firstAttribute="top" secondItem="Qts-s8-YVm" secondAttribute="bottom" constant="31" id="zIC-BA-3s4"/>
+                            <constraint firstItem="8IQ-6H-e5f" firstAttribute="top" secondItem="nkH-bd-hQW" secondAttribute="bottom" constant="16" id="zos-T2-hIx"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="WA1-I5-QsS"/>
                     </view>
@@ -146,10 +189,10 @@
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A52-MG-zJe">
-                                <rect key="frame" x="157" y="497" width="100" height="40"/>
+                                <rect key="frame" x="107" y="461" width="200" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="25i-LR-D0E"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="34" id="2KM-wl-Xjt"/>
+                                    <constraint firstAttribute="width" constant="200" id="WhG-vS-Uqa"/>
+                                    <constraint firstAttribute="height" constant="40" id="XbQ-Ba-hgE"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="17"/>
                                 <color key="tintColor" red="0.064163751899999996" green="0.20448517799999999" blue="0.60223704580000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -171,14 +214,16 @@
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EUD-Hy-G91">
-                                <rect key="frame" x="264" y="727" width="100" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EUD-Hy-G91">
+                                <rect key="frame" x="227" y="62" width="150" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="WNN-s2-v6a"/>
-                                    <constraint firstAttribute="width" constant="100" id="ueq-U1-eVy"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="KcD-Mk-56d"/>
+                                    <constraint firstAttribute="height" constant="40" id="bSM-oQ-Fi2"/>
+                                    <constraint firstAttribute="width" constant="150" id="cUL-SL-rQc"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="rGm-i3-e4Z"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="17"/>
-                                <inset key="titleEdgeInsets" minX="4" minY="0.0" maxX="4" maxY="0.0"/>
+                                <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
                                 <state key="normal" title="Settings">
                                     <color key="titleColor" red="0.064163751899999996" green="0.20448517799999999" blue="0.60223704580000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -186,17 +231,17 @@
                                     <action selector="settingsButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3ef-Jy-2Uw"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Input number from 0 to 100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CIi-fv-cIt">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Input number" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CIi-fv-cIt">
                                 <rect key="frame" x="50" y="319" width="314" height="15"/>
                                 <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="15"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="MCo-pO-K6w">
-                                <rect key="frame" x="157" y="453.5" width="100" height="34"/>
+                                <rect key="frame" x="107" y="413" width="200" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="0Py-QC-Drg"/>
-                                    <constraint firstAttribute="height" constant="34" id="bEW-MQ-voM"/>
+                                    <constraint firstAttribute="width" constant="200" id="fal-6P-NTL"/>
+                                    <constraint firstAttribute="height" constant="40" id="swl-9K-ZYc"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="17"/>
                                 <color key="tintColor" red="0.064163751899999996" green="0.20448517799999999" blue="0.60223704580000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -208,17 +253,23 @@
                                     <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gSh-Tu-BOi"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uoe-eO-Owa">
-                                <rect key="frame" x="50" y="230" width="314" height="23"/>
-                                <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="23"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uoe-eO-Owa">
+                                <rect key="frame" x="50" y="230" width="314" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="314" id="qez-RR-iOp"/>
+                                    <constraint firstAttribute="height" constant="61" id="rad-Fi-Ifw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="17"/>
                                 <color key="textColor" red="0.064163751899999996" green="0.20448517799999999" blue="0.60223704580000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TE0-ge-xyG">
-                                <rect key="frame" x="50" y="727" width="100" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TE0-ge-xyG">
+                                <rect key="frame" x="37" y="62" width="150" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="dtX-CO-dUp"/>
-                                    <constraint firstAttribute="height" constant="40" id="wRd-Qn-OZb"/>
+                                    <constraint firstAttribute="width" constant="150" id="DGE-IG-Cth"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="P4b-Em-qs5"/>
+                                    <constraint firstAttribute="height" constant="40" id="cIP-EC-nYm"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="peA-pL-TlC"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="17"/>
                                 <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
@@ -237,38 +288,50 @@
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MAL-iV-AIX">
+                                <rect key="frame" x="20" y="120" width="374" height="4"/>
+                                <color key="backgroundColor" red="0.064163751899999996" green="0.20448517799999999" blue="0.60223704580000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="4" id="DRJ-t6-XtZ"/>
+                                    <constraint firstAttribute="width" constant="374" id="d5h-pi-Alf"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.92117339369999995" green="0.95754641289999998" blue="0.95176857709999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="0.064163751899999996" green="0.20448517799999999" blue="0.60223704580000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Uoe-eO-Owa" firstAttribute="top" secondItem="BTc-Yr-t4B" secondAttribute="bottom" constant="42" id="1WY-k2-mnx"/>
+                            <constraint firstItem="TE0-ge-xyG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="18" id="2TF-gg-DJ5"/>
+                            <constraint firstItem="MCo-pO-K6w" firstAttribute="top" secondItem="lpW-MA-ZtM" secondAttribute="bottom" constant="18" id="31g-Q0-udS"/>
                             <constraint firstItem="CIi-fv-cIt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="3cy-AY-1Bh"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2GP-wr-DVL" secondAttribute="trailing" constant="50" id="400-xU-ZHG"/>
-                            <constraint firstItem="TE0-ge-xyG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="4zi-tj-Bae"/>
                             <constraint firstItem="a0l-1J-D2S" firstAttribute="leading" secondItem="lpW-MA-ZtM" secondAttribute="trailing" constant="8" id="5hQ-M4-Cna"/>
+                            <constraint firstItem="MCo-pO-K6w" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="107" id="5ms-QX-hiy"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BTc-Yr-t4B" secondAttribute="trailing" constant="50" id="9T2-QP-Ddy"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="a0l-1J-D2S" secondAttribute="trailing" constant="50" id="9d2-Fu-t3j"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="a0l-1J-D2S" secondAttribute="trailing" constant="50" id="ADH-hH-vpR"/>
                             <constraint firstItem="2GP-wr-DVL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="AFj-A5-NGl"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TE0-ge-xyG" secondAttribute="bottom" constant="95" id="AdZ-Cu-Dxa"/>
-                            <constraint firstItem="CIi-fv-cIt" firstAttribute="top" secondItem="Uoe-eO-Owa" secondAttribute="bottom" constant="66" id="D0i-Iy-fhN"/>
+                            <constraint firstItem="MAL-iV-AIX" firstAttribute="top" secondItem="TE0-ge-xyG" secondAttribute="bottom" constant="18" id="B2b-J2-Mb1"/>
+                            <constraint firstItem="MAL-iV-AIX" firstAttribute="top" secondItem="EUD-Hy-G91" secondAttribute="bottom" constant="18" id="EzD-jj-fgl"/>
+                            <constraint firstItem="CIi-fv-cIt" firstAttribute="top" secondItem="Uoe-eO-Owa" secondAttribute="bottom" constant="28" id="GUG-Gf-ms9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="A52-MG-zJe" secondAttribute="trailing" constant="107" id="Ieq-8I-xBf"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CIi-fv-cIt" secondAttribute="trailing" constant="50" id="LXP-uQ-xHP"/>
+                            <constraint firstItem="EUD-Hy-G91" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="18" id="TWA-Yw-kqi"/>
                             <constraint firstItem="Uoe-eO-Owa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="XJf-c6-uza"/>
-                            <constraint firstItem="A52-MG-zJe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="157" id="a0b-8R-75W"/>
+                            <constraint firstItem="MAL-iV-AIX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Y6g-lz-DTS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MCo-pO-K6w" secondAttribute="trailing" constant="107" id="YtL-YO-Lak"/>
                             <constraint firstItem="lpW-MA-ZtM" firstAttribute="top" secondItem="2GP-wr-DVL" secondAttribute="bottom" constant="8" id="cpR-9d-hm3"/>
-                            <constraint firstItem="MCo-pO-K6w" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="157" id="dQ2-n0-9nO"/>
+                            <constraint firstItem="A52-MG-zJe" firstAttribute="top" secondItem="MCo-pO-K6w" secondAttribute="bottom" constant="8" id="dcE-aF-puA"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Uoe-eO-Owa" secondAttribute="trailing" constant="50" id="fR6-b3-daB"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EUD-Hy-G91" secondAttribute="trailing" constant="50" id="flw-7F-xtW"/>
                             <constraint firstItem="a0l-1J-D2S" firstAttribute="top" secondItem="2GP-wr-DVL" secondAttribute="bottom" constant="8" id="gh6-E8-Uqa"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MCo-pO-K6w" secondAttribute="trailing" constant="157" id="i0V-C4-UBl"/>
+                            <constraint firstItem="TE0-ge-xyG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37" id="hdJ-Tc-fN9"/>
                             <constraint firstItem="2GP-wr-DVL" firstAttribute="top" secondItem="CIi-fv-cIt" secondAttribute="bottom" constant="8" id="ijZ-Jb-Npt"/>
-                            <constraint firstItem="A52-MG-zJe" firstAttribute="top" secondItem="MCo-pO-K6w" secondAttribute="bottom" constant="9.5" id="k0r-hr-515"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MAL-iV-AIX" secondAttribute="trailing" constant="20" id="l8K-KC-MIa"/>
                             <constraint firstItem="BTc-Yr-t4B" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="109" id="mgn-Lf-wNr"/>
                             <constraint firstItem="a0l-1J-D2S" firstAttribute="top" secondItem="2GP-wr-DVL" secondAttribute="bottom" constant="8" id="oHJ-Do-Ldw"/>
-                            <constraint firstItem="MCo-pO-K6w" firstAttribute="top" secondItem="lpW-MA-ZtM" secondAttribute="bottom" constant="58.5" id="r7S-d3-znU"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="A52-MG-zJe" secondAttribute="trailing" constant="157" id="tyh-QI-4la"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="EUD-Hy-G91" secondAttribute="bottom" constant="95" id="wKG-dz-aCu"/>
                             <constraint firstItem="BTc-Yr-t4B" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="x5v-g6-hvj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EUD-Hy-G91" secondAttribute="trailing" constant="37" id="zNf-8p-K4W"/>
+                            <constraint firstItem="A52-MG-zJe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="107" id="zd8-xd-jS2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -276,10 +339,10 @@
                         <outlet property="chancelButton" destination="A52-MG-zJe" id="PaJ-NW-kuj"/>
                         <outlet property="guessButton" destination="MCo-pO-K6w" id="3jP-Ad-SVD"/>
                         <outlet property="infoLabel" destination="Uoe-eO-Owa" id="pYy-kd-JOG"/>
-                        <outlet property="inputNumber" destination="2GP-wr-DVL" id="kLq-oj-iKO"/>
+                        <outlet property="inputNumberTextField" destination="2GP-wr-DVL" id="Vtt-E5-SJ3"/>
                         <outlet property="numberOfTriesInfoLabel" destination="lpW-MA-ZtM" id="jYE-wc-kaa"/>
                         <outlet property="numberOfTriesLabel" destination="a0l-1J-D2S" id="eBZ-Pi-X5a"/>
-                        <outlet property="rangeInfoText" destination="CIi-fv-cIt" id="IWf-6L-4EC"/>
+                        <outlet property="rangeInfoLabel" destination="CIi-fv-cIt" id="QA5-0j-Ucx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -294,13 +357,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ujR-Pl-73q">
-                                <rect key="frame" x="282" y="62" width="100" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ujR-Pl-73q">
+                                <rect key="frame" x="227" y="62" width="150" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="NFP-Fh-8Kv"/>
-                                    <constraint firstAttribute="width" constant="100" id="qpz-AJ-uPB"/>
+                                    <constraint firstAttribute="width" constant="150" id="ZH6-SB-NBC"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="17"/>
+                                <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
                                 <state key="normal" title="Back">
                                     <color key="titleColor" red="0.064163751899999996" green="0.20448517799999999" blue="0.60223704580000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -308,11 +372,11 @@
                                     <action selector="backButtonTapped:" destination="sB6-co-p4R" eventType="touchUpInside" id="BTc-QR-1mM"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mli-ab-rDr">
-                                <rect key="frame" x="34" y="62" width="100" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mli-ab-rDr">
+                                <rect key="frame" x="37" y="62" width="150" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="GwF-EC-LeL"/>
-                                    <constraint firstAttribute="width" constant="100" id="Wv4-oN-td5"/>
+                                    <constraint firstAttribute="width" constant="150" id="dNH-iZ-e1n"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="17"/>
                                 <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
@@ -324,51 +388,67 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="100" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OV4-9S-326">
-                                <rect key="frame" x="336" y="128" width="46" height="30"/>
+                                <rect key="frame" x="227" y="226" width="50" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="BuT-JO-DAr"/>
-                                    <constraint firstAttribute="width" constant="46" id="FMQ-n6-Nnc"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="cFp-Jb-hFy"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="46" id="dRG-J2-De7"/>
+                                    <constraint firstAttribute="height" constant="30" id="NgO-Ge-TD0"/>
+                                    <constraint firstAttribute="width" constant="50" id="Q3z-PL-YMm"/>
                                 </constraints>
                                 <color key="textColor" red="0.064163751899999996" green="0.20448517799999999" blue="0.60223704580000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="to" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nom-Os-P3O">
-                                <rect key="frame" x="282" y="128" width="46" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The range is intered incorrectly! Try again." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XkS-TS-kxK">
+                                <rect key="frame" x="46" y="273" width="322" height="15"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="k7h-Z9-gbg"/>
-                                    <constraint firstAttribute="width" constant="46" id="xQM-We-I7d"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="17"/>
-                                <color key="textColor" red="0.064163751899999996" green="0.20448517799999999" blue="0.60223704580000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The range is intered incorrectly! Try again." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XkS-TS-kxK">
-                                <rect key="frame" x="47" y="167" width="321" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="JNY-N5-wt3"/>
+                                    <constraint firstAttribute="height" constant="15" id="WjV-t9-yLq"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="15"/>
                                 <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Alh-Bd-Hue">
-                                <rect key="frame" x="226" y="128" width="48" height="30"/>
+                                <rect key="frame" x="227" y="188" width="50" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="4Ja-TL-ugO"/>
-                                    <constraint firstAttribute="width" constant="48" id="Nuk-gP-DHi"/>
+                                    <constraint firstAttribute="width" constant="50" id="UxS-YP-B5S"/>
+                                    <constraint firstAttribute="height" constant="30" id="e9W-o4-WdA"/>
                                 </constraints>
                                 <color key="textColor" red="0.064163751899999996" green="0.20448517799999999" blue="0.60223704580000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set range from" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EA9-W7-A35">
-                                <rect key="frame" x="34" y="128" width="184" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="from" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EA9-W7-A35">
+                                <rect key="frame" x="158" y="188" width="55" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="hAr-WZ-xyS"/>
+                                    <constraint firstAttribute="width" constant="55" id="P6T-v4-HpD"/>
                                     <constraint firstAttribute="height" constant="30" id="s1K-CO-alW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="17"/>
+                                <color key="textColor" red="0.064163751899999996" green="0.20448517799999999" blue="0.60223704580000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vaw-2g-qUU">
+                                <rect key="frame" x="20" y="120" width="374" height="4"/>
+                                <color key="backgroundColor" red="0.064163751899999996" green="0.20448517799999999" blue="0.60223704580000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="Pj4-Uz-Im5"/>
+                                    <constraint firstAttribute="height" constant="4" id="Wzw-nN-2ti"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set range" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FtA-d5-Ga8">
+                                <rect key="frame" x="37" y="142" width="340" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="340" id="7xP-Rq-RVf"/>
+                                    <constraint firstAttribute="height" constant="30" id="9zb-Bj-y17"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="17"/>
+                                <color key="textColor" red="0.064163751899999996" green="0.20448517799999999" blue="0.60223704580000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="to" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nom-Os-P3O">
+                                <rect key="frame" x="158" y="226" width="55" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="55" id="LBL-9s-GgU"/>
+                                    <constraint firstAttribute="height" constant="30" id="k7h-Z9-gbg"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="17"/>
                                 <color key="textColor" red="0.064163751899999996" green="0.20448517799999999" blue="0.60223704580000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -378,23 +458,30 @@
                         <color key="backgroundColor" red="0.92117339369999995" green="0.95754641289999998" blue="0.95176857709999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="0.064163751899999996" green="0.20448517799999999" blue="0.60223704580000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="ZR1-DK-7pf" firstAttribute="trailing" secondItem="XkS-TS-kxK" secondAttribute="trailing" constant="46" id="5aV-eE-6CG"/>
-                            <constraint firstItem="ZR1-DK-7pf" firstAttribute="trailing" secondItem="OV4-9S-326" secondAttribute="trailing" constant="32" id="5gF-zM-job"/>
-                            <constraint firstItem="Alh-Bd-Hue" firstAttribute="top" secondItem="ZR1-DK-7pf" secondAttribute="top" constant="84" id="9HF-p2-fk5"/>
-                            <constraint firstItem="EA9-W7-A35" firstAttribute="top" secondItem="Mli-ab-rDr" secondAttribute="bottom" constant="26" id="9d2-6Y-FQe"/>
-                            <constraint firstItem="OV4-9S-326" firstAttribute="leading" secondItem="nom-Os-P3O" secondAttribute="trailing" constant="8" id="C5a-Ce-5XI"/>
-                            <constraint firstItem="Mli-ab-rDr" firstAttribute="top" secondItem="ZR1-DK-7pf" secondAttribute="top" constant="18" id="Dws-XE-WpV"/>
-                            <constraint firstItem="nom-Os-P3O" firstAttribute="top" secondItem="ujR-Pl-73q" secondAttribute="bottom" constant="26" id="EAf-EY-HaJ"/>
-                            <constraint firstItem="nom-Os-P3O" firstAttribute="leading" secondItem="Alh-Bd-Hue" secondAttribute="trailing" constant="8" id="Hzw-B1-O29"/>
-                            <constraint firstItem="ujR-Pl-73q" firstAttribute="top" secondItem="ZR1-DK-7pf" secondAttribute="top" constant="18" id="KI0-Rg-tt6"/>
-                            <constraint firstItem="XkS-TS-kxK" firstAttribute="leading" secondItem="ZR1-DK-7pf" secondAttribute="leading" constant="47" id="Kfl-tm-Z9m"/>
-                            <constraint firstItem="XkS-TS-kxK" firstAttribute="top" secondItem="Alh-Bd-Hue" secondAttribute="bottom" constant="9" id="WQr-Po-wTM"/>
-                            <constraint firstItem="OV4-9S-326" firstAttribute="leading" secondItem="nom-Os-P3O" secondAttribute="trailing" constant="8" id="aVj-q7-3zf"/>
-                            <constraint firstItem="Mli-ab-rDr" firstAttribute="leading" secondItem="ZR1-DK-7pf" secondAttribute="leading" constant="34" id="ahz-bc-GFy"/>
-                            <constraint firstItem="OV4-9S-326" firstAttribute="top" secondItem="ujR-Pl-73q" secondAttribute="bottom" constant="26" id="cfe-bB-2l3"/>
-                            <constraint firstItem="ZR1-DK-7pf" firstAttribute="trailing" secondItem="ujR-Pl-73q" secondAttribute="trailing" constant="32" id="dgq-kA-iLM"/>
-                            <constraint firstItem="EA9-W7-A35" firstAttribute="leading" secondItem="ZR1-DK-7pf" secondAttribute="leading" constant="34" id="fKW-kf-x62"/>
-                            <constraint firstItem="Alh-Bd-Hue" firstAttribute="leading" secondItem="EA9-W7-A35" secondAttribute="trailing" constant="8" id="ovd-Zq-RUh"/>
+                            <constraint firstItem="XkS-TS-kxK" firstAttribute="leading" secondItem="ZR1-DK-7pf" secondAttribute="leading" constant="46" id="4bf-6C-Jft"/>
+                            <constraint firstItem="Vaw-2g-qUU" firstAttribute="top" secondItem="ujR-Pl-73q" secondAttribute="bottom" constant="18" id="51m-OG-Msb"/>
+                            <constraint firstItem="FtA-d5-Ga8" firstAttribute="top" secondItem="Vaw-2g-qUU" secondAttribute="bottom" constant="18" id="6rO-fr-6hL"/>
+                            <constraint firstItem="ZR1-DK-7pf" firstAttribute="trailing" secondItem="XkS-TS-kxK" secondAttribute="trailing" constant="46" id="AXl-ct-r05"/>
+                            <constraint firstItem="ZR1-DK-7pf" firstAttribute="trailing" secondItem="OV4-9S-326" secondAttribute="trailing" constant="137" id="Fca-UH-dmc"/>
+                            <constraint firstItem="ZR1-DK-7pf" firstAttribute="trailing" secondItem="Vaw-2g-qUU" secondAttribute="trailing" constant="20" id="Iib-0Y-gkS"/>
+                            <constraint firstItem="ZR1-DK-7pf" firstAttribute="trailing" secondItem="XkS-TS-kxK" secondAttribute="trailing" constant="46" id="Izc-Wf-KYG"/>
+                            <constraint firstItem="ZR1-DK-7pf" firstAttribute="trailing" secondItem="Alh-Bd-Hue" secondAttribute="trailing" constant="137" id="JF3-3f-oHH"/>
+                            <constraint firstItem="EA9-W7-A35" firstAttribute="top" secondItem="FtA-d5-Ga8" secondAttribute="bottom" constant="16" id="JT1-e3-occ"/>
+                            <constraint firstItem="XkS-TS-kxK" firstAttribute="leading" secondItem="ZR1-DK-7pf" secondAttribute="leading" constant="46" id="KRp-vt-Eto"/>
+                            <constraint firstItem="FtA-d5-Ga8" firstAttribute="leading" secondItem="ZR1-DK-7pf" secondAttribute="leading" constant="37" id="LuL-nl-aiz"/>
+                            <constraint firstItem="OV4-9S-326" firstAttribute="leading" secondItem="nom-Os-P3O" secondAttribute="trailing" constant="14" id="OfU-uY-j9p"/>
+                            <constraint firstItem="Vaw-2g-qUU" firstAttribute="top" secondItem="Mli-ab-rDr" secondAttribute="bottom" constant="18" id="PHm-LW-y48"/>
+                            <constraint firstItem="ujR-Pl-73q" firstAttribute="top" secondItem="ZR1-DK-7pf" secondAttribute="top" constant="18" id="Q7x-lT-HKs"/>
+                            <constraint firstItem="Mli-ab-rDr" firstAttribute="top" secondItem="ZR1-DK-7pf" secondAttribute="top" constant="18" id="UWc-Ey-xNE"/>
+                            <constraint firstItem="Vaw-2g-qUU" firstAttribute="leading" secondItem="ZR1-DK-7pf" secondAttribute="leading" constant="20" id="Ud6-u9-vd4"/>
+                            <constraint firstItem="ZR1-DK-7pf" firstAttribute="trailing" secondItem="FtA-d5-Ga8" secondAttribute="trailing" constant="37" id="Wwp-3L-kvM"/>
+                            <constraint firstItem="Alh-Bd-Hue" firstAttribute="leading" secondItem="EA9-W7-A35" secondAttribute="trailing" constant="14" id="bKi-Fh-BTL"/>
+                            <constraint firstItem="OV4-9S-326" firstAttribute="top" secondItem="Alh-Bd-Hue" secondAttribute="bottom" constant="8" id="bte-FM-6d5"/>
+                            <constraint firstItem="ZR1-DK-7pf" firstAttribute="trailing" secondItem="ujR-Pl-73q" secondAttribute="trailing" constant="37" id="dq2-ey-oML"/>
+                            <constraint firstItem="Alh-Bd-Hue" firstAttribute="top" secondItem="FtA-d5-Ga8" secondAttribute="bottom" constant="16" id="jwf-Oi-6Ju"/>
+                            <constraint firstItem="nom-Os-P3O" firstAttribute="top" secondItem="EA9-W7-A35" secondAttribute="bottom" constant="8" id="l1g-Tj-1Nt"/>
+                            <constraint firstItem="Mli-ab-rDr" firstAttribute="leading" secondItem="ZR1-DK-7pf" secondAttribute="leading" constant="37" id="rUI-Dr-N6Q"/>
+                            <constraint firstItem="XkS-TS-kxK" firstAttribute="top" secondItem="OV4-9S-326" secondAttribute="bottom" constant="17" id="v1B-Kd-ULd"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ZR1-DK-7pf"/>
                     </view>

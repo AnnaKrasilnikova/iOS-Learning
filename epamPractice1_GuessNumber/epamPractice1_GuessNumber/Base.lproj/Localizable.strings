@@ -5,11 +5,13 @@
   Created by Anna Krasilnikova on 27.01.2020.
   Copyright © 2020 Anna Krasilnikova. All rights reserved.
 */
-"Much" = "Much";
 "Little" = "Little";
-"Guess" = "Guess";
-"Input the number!" = "Input the number!";
-"Input correct number!" = "Input correct number!";
-"New game" = "New game";
+"Much" = "Much";
 "Guessed!" = "Guessed!";
+"New game" = "New game";
 "Guess the number" = "Guess the number";
+" from " = " from ";
+" to " = " to ";
+"Guess" = "Guess";
+"Input correct number!" = "Input correct number!";
+

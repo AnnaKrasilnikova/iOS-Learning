@@ -19,8 +19,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E7362E3C23DEBC990097C05B /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		E7362E3D23DEBC990097C05B /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		E7362E3E23DEFB190097C05B /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		E73A935F23D9656F008BD194 /* epamPractice1_GuessNumber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = epamPractice1_GuessNumber.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E73A936223D9656F008BD194 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -32,7 +30,10 @@
 		E769E14E23DEB3920005A715 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E769E15123DEB3EC0005A715 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		E7BD175F23E2B24D007C6364 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
-		E7BD176223E30AB2007C6364 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		E7FA9C0423E7E81000D62EF7 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		E7FA9C0523E7E81100D62EF7 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		E7FA9C0623E7E81100D62EF7 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E7FA9C0723E7E81100D62EF7 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,7 +168,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				E73A936723D9656F008BD194 /* Base */,
-				E7BD176223E30AB2007C6364 /* ru */,
+				E7FA9C0423E7E81000D62EF7 /* ru */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -176,6 +177,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				E73A936C23D96575008BD194 /* Base */,
+				E7FA9C0523E7E81100D62EF7 /* ru */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -184,7 +186,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				E769E14E23DEB3920005A715 /* Base */,
-				E7362E3C23DEBC990097C05B /* ru */,
+				E7FA9C0623E7E81100D62EF7 /* ru */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -193,7 +195,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				E769E15123DEB3EC0005A715 /* Base */,
-				E7362E3D23DEBC990097C05B /* ru */,
+				E7FA9C0723E7E81100D62EF7 /* ru */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";

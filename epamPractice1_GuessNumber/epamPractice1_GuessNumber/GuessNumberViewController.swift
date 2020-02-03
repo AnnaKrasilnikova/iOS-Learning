@@ -17,16 +17,15 @@ enum InfoKeys: String {
 class GuessNumberViewController: UIViewController {
     
     @IBOutlet weak var infoLabel: UILabel!
-    @IBOutlet weak var inputNumber: UITextField!
+    @IBOutlet weak var inputNumberTextField: UITextField!
     @IBOutlet weak var guessButton: UIButton!
     @IBOutlet weak var chancelButton: UIButton!
     @IBOutlet weak var numberOfTriesLabel: UILabel!
     @IBOutlet weak var numberOfTriesInfoLabel: UILabel!
-    @IBOutlet weak var rangeInfoText: UILabel!
+    @IBOutlet weak var rangeInfoLabel: UILabel!
     
-    var a: Int = UserDefaults.standard.integer(forKey: SettingsKeys.startValue.rawValue)
-    //MARK: add default value = 100
-    var b: Int = UserDefaults.standard.integer(forKey: SettingsKeys.endValue.rawValue)
+    var a: Int = 0
+    var b: Int = 100
     var genNumber: Int = 0
     var enteredNumber: Int = 0
     var numberOfTries: Int = 0
@@ -38,6 +37,9 @@ class GuessNumberViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setDefaultsSettings()
+        a = UserDefaults.standard.integer(forKey: SettingsKeys.startValue.rawValue)
+        b = UserDefaults.standard.integer(forKey: SettingsKeys.endValue.rawValue)
         gameOverFunc()
     }
     
@@ -52,29 +54,34 @@ class GuessNumberViewController: UIViewController {
             gameOverFunc()
             return
         }
-        guard let text = inputNumber.text else { return }
+        guard let text = inputNumberTextField.text else { return }
         if text.isEmpty {
             inputNumberError()
             return
         }
-        //MARK: add check
-            enteredNumber = Int(text) ?? 0
-            chancelButton.isHidden = false
-            if enteredNumber < genNumber {
-                infoLabelTextChange(text: "Little")
-            } else if enteredNumber > genNumber {
-                infoLabelTextChange(text: "Much")
+        if let enteredNumber = Int(text) {
+            if enteredNumber >= a && enteredNumber <= b {
+                chancelButton.isHidden = false
+                if enteredNumber < genNumber {
+                    infoLabelTextChange(text: "Little")
+                } else if enteredNumber > genNumber {
+                    infoLabelTextChange(text: "Much")
+                } else {
+                    infoLabelTextChange(text: "Guessed!")
+                    saveInfo(numberTries: numberOfTries + 1)
+                    gameOver = true
+                    guessButton.setTitle(NSLocalizedString("New game", comment: ""), for: .normal)
+                    chancelButton.isHidden = true
+                }
+                clearInputNumber()
+                numberOfTries += 1
+                numberOfTriesTextChange(number: numberOfTries)
             } else {
-                infoLabelTextChange(text: "Guessed!")
-                gameOver = true
-                saveInfo(numberTries: numberOfTries + 1)
-                guessButton.setTitle(NSLocalizedString("New game", comment: ""), for: .normal)
-                chancelButton.isHidden = true
-            //}
+                inputNumberError()
+            }
+        } else {
+            inputNumberError()
         }
-        clearInputNumber()
-        numberOfTries += 1
-        numberOfTriesTextChange(number: numberOfTries)
     }
     
     //MARK: go to settings tab
@@ -90,7 +97,6 @@ class GuessNumberViewController: UIViewController {
     
     //MARK: go to info tab
     @IBAction func infoButtonTapped(_ sender: UIButton) {
-        //let mainStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
         guard let infoViewController = mainStoryboard.instantiateViewController(withIdentifier: "InfoViewController") as? InfoViewController else { return }
         inputInfoHandling?(UserDefaults.standard.integer(forKey: InfoKeys.maxTriesKey.rawValue),
                            UserDefaults.standard.integer(forKey: InfoKeys.minTriesKey.rawValue),
@@ -105,45 +111,59 @@ class GuessNumberViewController: UIViewController {
     
     //MARK: clear input textField
     func clearInputNumber() {
-        inputNumber.text = nil
+        inputNumberTextField.text = nil
     }
     
     //MARK: reset all game settings
-    func gameOverFunc(){
+    func gameOverFunc() {
         gameOver = false
         numberOfTries = 0
         enteredNumber = 0
         numberOfTriesTextChange(number: numberOfTries)
-        //infoLabel.isHidden = true
         infoLabel.text = ""
-        rangeInfoText.text = "Guess the number" + " from " + String(a) + " to " + String(b)
+        rangeInfoLabel.text = NSLocalizedString("Guess the number", comment: "") + NSLocalizedString(" from ", comment: "") + String(a) + NSLocalizedString(" to ",comment: "") + String(b)
         clearInputNumber()
         genNumber = generateNumber()
         guessButton.setTitle(NSLocalizedString("Guess", comment: ""), for: .normal)
         chancelButton.isHidden = true
     }
     
-    func infoLabelTextChange(text: String){
-        //infoLabel.isHidden = true
+    //MARK: set infoLabel text
+    func infoLabelTextChange(text: String) {
         infoLabel.text = NSLocalizedString(text, comment: "")
     }
     
-    func numberOfTriesTextChange(number: Int){
+    //MARK: set numberOfTries text
+    func numberOfTriesTextChange(number: Int) {
         numberOfTriesLabel.text = String(number)
     }
     
     //MARK: save info in defaults
-    func saveInfo (numberTries: Int){
-        UserDefaults.standard.set(numberTries,
+    func saveInfo (numberTries: Int) {
+        if numberTries > UserDefaults.standard.integer(forKey: InfoKeys.maxTriesKey.rawValue) {
+            UserDefaults.standard.set(numberTries,
                                   forKey: InfoKeys.maxTriesKey.rawValue)
-        UserDefaults.standard.set(numberTries,
+        }
+        if UserDefaults.standard.string(forKey: InfoKeys.minTriesKey.rawValue) == "-"
+        || numberTries < UserDefaults.standard.integer(forKey: InfoKeys.minTriesKey.rawValue) {
+            UserDefaults.standard.set(numberTries,
                                   forKey: InfoKeys.minTriesKey.rawValue)
+        }
         UserDefaults.standard.set(UserDefaults.standard.integer(forKey: InfoKeys.countGamesKey.rawValue) + 1,
                                   forKey: InfoKeys.countGamesKey.rawValue)
     }
     
-    func inputNumberError(){
+    //MARK: set warning message
+    func inputNumberError() {
         infoLabelTextChange(text: "Input correct number!")
     }
+    
+    //MARK: set default values for UserDefaults keys
+    func setDefaultsSettings () {
+        UserDefaults.standard.register(defaults: [SettingsKeys.startValue.rawValue : 0])
+        UserDefaults.standard.register(defaults: [SettingsKeys.endValue.rawValue : 100])
+        UserDefaults.standard.register(defaults: [InfoKeys.maxTriesKey.rawValue : "-"])
+        UserDefaults.standard.register(defaults: [InfoKeys.minTriesKey.rawValue : "-"])
+        UserDefaults.standard.register(defaults: [InfoKeys.countGamesKey.rawValue : 0])
+    }
 }
-
