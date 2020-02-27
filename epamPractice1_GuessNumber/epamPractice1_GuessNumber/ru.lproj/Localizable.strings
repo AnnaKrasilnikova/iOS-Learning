@@ -1,0 +1,17 @@
+/* 
+  Localizable.strings
+  epamPractice1_GuessNumber
+
+  Created by Anna Krasilnikova on 27.01.2020.
+  Copyright © 2020 Anna Krasilnikova. All rights reserved.
+*/
+"Little" = "Мало";
+"Much" = "Много";
+"Guessed!" = "Угадал!";
+"New game" = "Новая игра";
+"Guess the number" = "Угадай число";
+" from " = " с ";
+" to " = " по ";
+"Guess" = "Угадать";
+"Input correct number!" = "Введи корректное число!";
+

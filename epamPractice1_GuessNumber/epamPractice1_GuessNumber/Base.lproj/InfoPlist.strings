@@ -1,0 +1,9 @@
+/* 
+  InfoPlist.strings
+  epamPractice1_GuessNumber
+
+  Created by Anna Krasilnikova on 27.01.2020.
+  Copyright © 2020 Anna Krasilnikova. All rights reserved.
+*/
+"CFBundleDisplayName" = "Guess the number";
+"CFBundleName" = "Guess the number";
