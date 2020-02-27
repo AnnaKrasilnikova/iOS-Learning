@@ -24,8 +24,8 @@ class GuessNumberViewController: UIViewController {
     @IBOutlet weak var numberOfTriesInfoLabel: UILabel!
     @IBOutlet weak var rangeInfoLabel: UILabel!
     
-    var a: Int = 0
-    var b: Int = 100
+    var startOfRangeVar: Int = 0
+    var endOfRangeVar: Int = 100
     var genNumber: Int = 0
     var enteredNumber: Int = 0
     var numberOfTries: Int = 0
@@ -38,8 +38,8 @@ class GuessNumberViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setDefaultsSettings()
-        a = UserDefaults.standard.integer(forKey: SettingsKeys.startValue.rawValue)
-        b = UserDefaults.standard.integer(forKey: SettingsKeys.endValue.rawValue)
+        startOfRangeVar = UserDefaults.standard.integer(forKey: SettingsKeys.startValue.rawValue)
+        endOfRangeVar = UserDefaults.standard.integer(forKey: SettingsKeys.endValue.rawValue)
         gameOverFunc()
     }
     
@@ -60,7 +60,7 @@ class GuessNumberViewController: UIViewController {
             return
         }
         if let enteredNumber = Int(text) {
-            if enteredNumber >= a && enteredNumber <= b {
+            if enteredNumber >= startOfRangeVar && enteredNumber <= endOfRangeVar {
                 chancelButton.isHidden = false
                 if enteredNumber < genNumber {
                     infoLabelTextChange(text: "Little")
@@ -88,8 +88,8 @@ class GuessNumberViewController: UIViewController {
     @IBAction func settingsButtonTapped(_ sender: UIButton) {
         guard let settingsViewController = mainStoryboard.instantiateViewController(withIdentifier: "SettingsViewController") as? SettingsViewController else { return }
         settingsViewController.inputHandling = { [weak self] varA, varB in
-            self?.a = varA
-            self?.b = varB
+            self?.startOfRangeVar = varA
+            self?.endOfRangeVar = varB
             self?.gameOverFunc()
         }
         self.present(settingsViewController, animated: true)
@@ -106,7 +106,7 @@ class GuessNumberViewController: UIViewController {
     
     //MARK: generate new random number
     func generateNumber() -> Int {
-        return Int.random(in: a...b)
+        return Int.random(in: startOfRangeVar...endOfRangeVar)
     }
     
     //MARK: clear input textField
@@ -121,7 +121,7 @@ class GuessNumberViewController: UIViewController {
         enteredNumber = 0
         numberOfTriesTextChange(number: numberOfTries)
         infoLabel.text = ""
-        rangeInfoLabel.text = NSLocalizedString("Guess the number", comment: "") + NSLocalizedString(" from ", comment: "") + String(a) + NSLocalizedString(" to ",comment: "") + String(b)
+        rangeInfoLabel.text = NSLocalizedString("Guess the number", comment: "") + NSLocalizedString(" from ", comment: "") + String(startOfRangeVar) + NSLocalizedString(" to ",comment: "") + String(endOfRangeVar)
         clearInputNumber()
         genNumber = generateNumber()
         guessButton.setTitle(NSLocalizedString("Guess", comment: ""), for: .normal)
